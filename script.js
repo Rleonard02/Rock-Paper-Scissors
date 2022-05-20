@@ -1,3 +1,11 @@
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+
+    button.addEventListener('click', () => {
+        alert(button.id);
+    });
+});
 
     
 
@@ -76,10 +84,10 @@ function playRound(playerSelection, computerSelection){
 
 
 
-function game() {
+/*function game() {
     
 
-    for(let i = 0; i < 5 ; i++){
+    for(let i = 0; i < 1 ; i++){
         const stringInput = prompt("Rock, Paper, or Scissors?");
         const playerSelection = stringInput.toLowerCase();
         console.log("Player choice: " + playerSelection);
@@ -103,5 +111,5 @@ function game() {
     }
 }
 
-console.log(game());
+*/
     
